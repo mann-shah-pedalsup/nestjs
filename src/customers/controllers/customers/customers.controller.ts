@@ -37,11 +37,8 @@ export class CustomersController {
   }
 
   @Post()
+  @UsePipes(ValidationPipe)
   createCustomer(@Body() customerDto: CustomerDto) {
     this.customersService.newCustomer(customerDto);
   }
-  // @Get('')
-  // getCustomer() {
-  //   return 'Server connected successfully';
-  // }
 }
