@@ -8,6 +8,8 @@ import {
   ParseIntPipe,
   Post,
   Res,
+  UsePipes,
+  ValidationPipe,
 } from '@nestjs/common';
 import { Response } from 'express';
 import { CustomerDto } from 'src/customers/dtos/customer.dto';
